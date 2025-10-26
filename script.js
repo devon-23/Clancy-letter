@@ -7,11 +7,9 @@ const inputContainer = document.querySelector('.input-container');
 const letter = document.getElementById('letter');
 
 const themes = [
-  'theme-typewriter',
   'theme-xerox',
-  'theme-inverted',
-  'theme-red',
-  'theme-smudged'
+  'theme-smudged',
+  'theme-third'
 ];
 
 let currentTheme = null;

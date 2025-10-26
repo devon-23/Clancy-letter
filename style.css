@@ -62,12 +62,20 @@ button:hover {
   margin-top: 1em;
   min-height: 300px;
   text-align: left;
-  border: 1px solid #555;
   border-radius: 8px;
   animation: fadeIn 1s ease;
   transition: all 0.4s ease-in-out;
 }
 
+.letter {
+    width: 80%;
+    max-width: 800px;
+    margin: 2rem auto;
+    height: auto;             /* let height expand */
+    aspect-ratio: auto;       /* preserves image aspect ratio */
+    position: relative;
+  }
+  
 /* Add subtle texture overlays */
 .letter::before {
   content: "";
@@ -89,21 +97,28 @@ button:hover {
 
 /* Xerox copy */
 .theme-xerox {
-  background: #eee;
   color: #111;
   font-family: 'Times New Roman', serif;
-  filter: grayscale(100%) contrast(1.1);
   background-image: url('assets/pic1.png');
 }
 
 /* Smudged grayscale look */
 .theme-smudged {
-  background: #dcdcdc;
   color: #111;
-  filter: contrast(0.9) brightness(0.95);
   font-family: 'Courier New', monospace;
   background-image: url(assets/pic2.jpg);
 }
+
+.theme-third {
+    color: #111;
+    font-family: 'Courier New', monospace;
+  
+    background-image: url('assets/pic3.png');
+    background-size: contain;           /* scales the image to fit fully inside the element */
+    background-position: center top;    /* centers it horizontally, sticks to top vertically */
+    background-repeat: no-repeat;       /* no tiling */
+  }
+  
 
 .button-row {
   margin-top: 1em;
